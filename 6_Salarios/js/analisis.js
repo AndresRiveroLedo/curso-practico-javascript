@@ -61,6 +61,7 @@ const spliceStart = parseInt((salariosColSorted.length * 90) / 100);
 le restamos el 90% y asi nos quedamos con el 10% restante*/
 const spliceCount = (salariosColSorted.length - spliceStart);
 
+/*Guardamos solo el 10% top de la lista salariosColSorted  */
 const salariosColTop10 = salariosColSorted.splice(spliceStart, spliceCount);
 
 const medianaTop10Col = medianaSalarios(salariosColTop10);
